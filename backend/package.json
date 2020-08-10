@@ -1,0 +1,49 @@
+{
+  "name": "bundle-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "conventional-changelog": "conventional-changelog",
+    "start": "node ./src/app",
+    "dev": "./node_modules/.bin/nodemon ./src/app",
+    "start:prod": "export NODE_ENV=production&&node ./src/app",
+    "lint": "eslint --report-unused-disable-directives .",
+    "lint:fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akveo-private/bundle-node.git"
+  },
+  "author": "Akveo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akveo-private/bundle-node/issues"
+  },
+  "homepage": "https://github.com/akveo-private/bundle-node#readme",
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.5",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.5.0",
+    "passport-oauth2-middleware": "^1.0.3",
+    "passport-oauth2-refresh": "^1.1.0",
+    "swagger-ui-express": "^4.1.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "1.3.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^1.19.4"
+  }
+}
